@@ -45,7 +45,7 @@ public class SimpleCarController : MonoBehaviour {
 		_transform.rotation = _quat;
 	}
 public float Speed() {
-		return Math.Abs((frontDriverW.radius * Mathf.PI * frontDriverW.rpm * 60f / 1000f)/10000);
+		return Math.Abs(frontDriverW.radius * Mathf.PI * frontDriverW.rpm * 60f / 1000000f);
 	}
 
 	private void FixedUpdate()
